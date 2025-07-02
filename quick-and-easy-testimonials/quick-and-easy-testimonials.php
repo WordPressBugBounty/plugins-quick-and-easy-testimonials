@@ -3,8 +3,8 @@
  * Plugin Name:       Quick and Easy Testimonials
  * Plugin URI:        https://wordpress.org/plugins/quick-and-easy-testimonials/
  * Description:       This plugin provides a quick and easy way to add testimonials to your site.
- * Version:           1.1.3
- * Tested up to:      6.7.1
+ * Version:           1.1.4
+ * Tested up to:      6.8.1
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            InspiryThemes
@@ -22,6 +22,8 @@ if ( ! defined( 'WPINC' ) ) {
 
 define( 'QE_TESTIMONIALS_BASE', plugin_basename( __FILE__ ) );
 
+// Plugin text domain.
+define( 'QE_TESTIMONIALS_TEXT_DOMAIN', 'qe-testimonials' );
 
 if ( ! function_exists( 'get_plugin_data' ) ) {
 	require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
